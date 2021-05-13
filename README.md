@@ -2,6 +2,7 @@
 <img alt="lab" src="https://user-images.githubusercontent.com/79819665/109740293-032f1f80-7c06-11eb-8149-bc0f5c6a4011.png" style="border-radius:20%;">
 
 [![appstore332](https://user-images.githubusercontent.com/79819665/109643493-426e5980-7b8f-11eb-8e33-7d95398f2a4e.png)](https://apps.apple.com/app/neural-network/id1529389288)
+[![image](https://user-images.githubusercontent.com/79819665/118063612-0ac03100-b3cc-11eb-9b46-216f9a639edb.png)](https://apps.apple.com/app/neural-network/id1529389288)
 [![googleplay300](https://user-images.githubusercontent.com/79819665/109643151-cc69f280-7b8e-11eb-9f2a-d01d34d84905.png)](https://play.google.com/store/apps/details?id=com.jerryjee.nn)
 
 # Technique Supports
