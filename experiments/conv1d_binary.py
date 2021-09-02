@@ -55,7 +55,6 @@ class PairUpDataset(torch.utils.data.Dataset):
 
 class Datasets:
     def __init__(self, batch_size, total_count=1000, length=10):
-        self.length = length
         self.train_loader = torch.utils.data.DataLoader(
           PairUpDataset(total_count, length),
           batch_size=batch_size, shuffle=True)
