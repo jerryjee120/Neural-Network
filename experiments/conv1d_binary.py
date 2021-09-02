@@ -15,7 +15,7 @@ class Net1d(nn.Module):
     def forward(self, x):
         """
         Args:
-            x: [N,1,100]
+            x: [N,1,10]
         """
         o1 = self.conv(x)
         o4 = torch.sigmoid(o1)
@@ -23,9 +23,9 @@ class Net1d(nn.Module):
 
 
 def obj_func(in_tensor):
-    """1->0
+    """10
     Args:
-        in_tensor: [N,1,100]
+        in_tensor: [N,1,L]
     return:
         [N, 1, C]
     """
