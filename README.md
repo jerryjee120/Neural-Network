@@ -30,6 +30,11 @@ Learning with mission like gaming. In the missions, you will run into many key c
 
 Put neural network lab in your pocket. Variety of datasets: 2D and 3D datasets both with regression and classification. Get the dataset just with a tapping. Do experiments at anytime anywhere.
 
+### Tutorials
+<img alt="tutorial" src="https://user-images.githubusercontent.com/79819665/132432505-aeb6b7d9-2a8b-4400-87ff-5762589b6591.png" width="350"> <img alt="tutorial" src="https://user-images.githubusercontent.com/79819665/132432004-19cef500-858c-487d-ac63-1d834aa0db24.png" width="350">
+
+Intuitive and interactive tutorials. A large number of charts and interactive components are used to make learning more intuitive.
+
 ### Charts & Animations
 <img alt="chart" src="https://user-images.githubusercontent.com/79819665/109740979-2c03e480-7c07-11eb-82bf-83f941acdef3.png" width="350"> <img alt="conv2d" src="https://user-images.githubusercontent.com/79819665/109741186-8604aa00-7c07-11eb-86fd-925234614fdf.png" width="350"> 
 
