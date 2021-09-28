@@ -91,18 +91,18 @@ class ObjFunc:
     feature_length = 7
     threshold = 0.3
 
-    def is_edge(self, xs, start, edge1=True):
+    def _is_edge(self, xs, start, edge1=True):
         diff = xs[start] - xs[start + 1]
         ret = diff > self.threshold if edge1 else diff < -self.threshold
         return ret
 
-    def is_feature(self, xs):
+    def _is_feature(self, xs):
         assert len(xs) == self.feature_length
 
         return self.is_edge(xs, 0) \
-               and self.is_edge(xs, 2, edge1=False) \
-               and self.is_edge(xs, 3) \
-               and self.is_edge(xs, 5, edge1=False)
+            and self._is_edge(xs, 2, edge1=False) \
+            and self._is_edge(xs, 3) \
+            and self._is_edge(xs, 5, edge1=False)
 
     def __call__(self, xs):
         """10
@@ -114,7 +114,7 @@ class ObjFunc:
 
         for i in range(len(xs) - self.feature_length):
             sub_xs = xs[i:i + 7]
-            if self.is_feature(sub_xs):
+            if self._is_feature(sub_xs):
                 return True
 
         return False
