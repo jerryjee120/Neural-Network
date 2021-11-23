@@ -17,7 +17,7 @@ class ClassificationDataset(torch.utils.data.Dataset):
     def __init__(self, total_count, length):
         self.data = torch.randint(0, 2, (total_count, length, 1)).type(torch.FloatTensor)
         self.labels = torch.LongTensor([
-            obj_func(xs)
+            obj_func(xs.flatten().tolist())
             for xs in self.data
         ])
 
