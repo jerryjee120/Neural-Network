@@ -148,10 +148,10 @@ class Trainer:
             self.optimizer.zero_grad()
 
             _tokens = tokens.to(self.device)
-            mask = _tokens.gt(0.0)
+            masks = _tokens.gt(0.0)
             output = self.model(_tokens)
-            batch_loss = self.loss(output, target.to(self.device), mask)
-            loss = batch_loss / mask.sum()
+            batch_losses = self.loss(output, target.to(self.device), masks)
+            loss = batch_losses / masks.sum()
 
             loss.backward()
             self.optimizer.step()
@@ -172,19 +172,19 @@ class Trainer:
                 _tokens = tokens.to(self.device)
                 _target = target.to(self.device)
 
-                mask = _tokens.gt(0.0)
-                tokens_count += mask.sum()
+                masks = _tokens.gt(0.0)
+                tokens_count += masks.sum()
 
                 output = self.model(_tokens)
-                test_loss += self.loss(output, _target, mask)
+                test_loss += self.loss(output, _target, masks)
 
-                correct += (output.argmax(dim=-1).eq(_target) * mask).sum()
+                correct += (output.argmax(dim=-1).eq(_target) * masks).sum()
 
         return (test_loss / tokens_count).item(), (correct / tokens_count).item()
 
-    def loss(self, output, target, mask):
-        masked_loss = self.loss_fn(output.permute(dims=(0, 2, 1)), target) * mask
-        return masked_loss.sum()
+    def loss(self, output, target, masks):
+        masked_losses = self.loss_fn(output.permute(dims=(0, 2, 1)), target) * masks
+        return masked_losses.sum()
 
     def train(self, num_epoch):
         val_loss, accuracy = self.test()
