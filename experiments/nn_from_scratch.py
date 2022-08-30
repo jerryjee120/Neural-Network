@@ -158,4 +158,9 @@ def train(epoch, learning_rate):
             print(f"{i + 1} {loss:.4f}")
 
 
+def inference(x, y):
+    return net.forward([x, y])
+
+
 train(2000, learning_rate=10)
+inference(1, 2)
