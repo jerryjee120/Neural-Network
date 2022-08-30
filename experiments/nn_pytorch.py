@@ -42,8 +42,6 @@ torch.manual_seed(0)
 
 # build neural network
 net = MyNet()
-x = torch.FloatTensor([[0, 0]])
-print(net.forward(x))
 
 
 # train
@@ -67,4 +65,11 @@ def train(epoch, learning_rate):
             print(f"{i+1} {loss:.4f}")
 
 
+def inference(x, y):
+    net.eval()
+    with torch.no_grad():
+        return net(torch.FloatTensor([[x, y]]))
+
+
 train(2000, learning_rate=10)
+print(inference(1, 2))
