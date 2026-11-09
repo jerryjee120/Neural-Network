@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Feature request or idea
+    url: https://github.com/jerryjee120/Neural-Network/discussions/new?category=ideas
+    about: Please post features and ideas in Discussions › Ideas, where they can be voted on.
+  - name: Purchases, billing and cross-device access
+    url: https://github.com/jerryjee120/Neural-Network#purchases--cross-device-access
+    about: Read this first — paid content, Restore Purchases, Mac unlock and refunds.
+  - name: Question about the app or the tutorials
+    url: https://github.com/jerryjee120/Neural-Network/discussions/new?category=q-a
+    about: General questions are best asked in Discussions › Q&A.
+  - name: Guides and FAQ
+    url: https://github.com/jerryjee120/Neural-Network/wiki
+    about: Setup, purchases and the questions we get most often — check the wiki before opening an issue.

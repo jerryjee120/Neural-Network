@@ -7,18 +7,44 @@
 [![image](https://user-images.githubusercontent.com/79819665/118063612-0ac03100-b3cc-11eb-9b46-216f9a639edb.png)](https://apps.apple.com/app/neural-network/id1529389288)
 [![googleplay300](https://user-images.githubusercontent.com/79819665/109643151-cc69f280-7b8e-11eb-9f2a-d01d34d84905.png)](https://play.google.com/store/apps/details?id=com.jerryjee.nn)
 
+# Purchases & cross-device access
+- Paid content is available in the iOS / Android / Mac apps only; this
+  website offers free content.
+- A purchase made in the iOS app also unlocks the Mac app for free —
+  use "Restore Purchases" in the Mac app.
+- There are currently no plans for a Windows or web version.
+- Subscriptions are billed by the App Store / Google Play. For billing
+  issues, contact Apple / Google support with your transaction ID —
+  we can't see or refund payments on our side.
+
 # Technique Supports
-### Report an issue
-Create an issue in the [Issues](https://github.com/jerryjee120/Neural-Network/issues) block. We will fix it as soon as possible.
+We read every issue and discussion, but this repository is maintained by a
+small team — replies may take a while. Bug reports with steps to reproduce
+and your app version get fixed fastest.
+
+### Report a bug
+Open a [bug report](https://github.com/jerryjee120/Neural-Network/issues/new?template=bug_report.yml)
+and include your app version, platform (iOS / Android / macOS) and the steps
+that reproduce the problem.
 
 ### Require a feature
-Create an issue in the [Issues](https://github.com/jerryjee120/Neural-Network/issues) block. We will evaluate it, if accepted, it will be implemented in the future version.
+Post it in [Discussions › Ideas](https://github.com/jerryjee120/Neural-Network/discussions/new?category=ideas)
+— that is where feature requests are collected and discussed. Accepted ideas
+will be implemented in a future version.
+
+### Purchases, billing & account questions
+Check [Purchases & cross-device access](#purchases--cross-device-access) first.
+If that does not answer it, open a [purchase question](https://github.com/jerryjee120/Neural-Network/issues/new?template=purchase_question.yml)
+with your platform, app version and the transaction ID from your App Store /
+Google Play purchase history.
 
 ### Opinions & Discussions
 Create a new discussion or join a discussion in the [Discussions](https://github.com/jerryjee120/Neural-Network/discussions) block.
 
 ### More info
-Find more info in the [Wiki](https://github.com/jerryjee120/Neural-Network/wiki) block.
+- Official site: [leapai.top](https://leapai.top)
+- Guides and FAQ: [Wiki](https://github.com/jerryjee120/Neural-Network/wiki)
+- Anything not covered above: ask in [Discussions](https://github.com/jerryjee120/Neural-Network/discussions).
 
 # Features
 Learning and using neural networks in an intuitive and natural way!
