@@ -1,0 +1,64 @@
+name: Purchase or account question
+description: Problems buying, restoring, refunding or transferring a purchase
+title: "[Purchase] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please read **Purchases & cross-device access** in the [README](https://github.com/jerryjee120/Neural-Network#purchases--cross-device-access) first —
+        most questions are already answered there.
+
+        Note: payments are handled entirely by the App Store / Google Play.
+        We cannot see or refund a payment on our side, so for a refund please
+        contact Apple or Google support directly.
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: What is the question about?
+      options:
+        - Buying / subscribing
+        - Restoring a purchase
+        - Billing, charge or refund
+        - Unlocking on another device
+        - Account / sign-in
+        - Something else
+    validations:
+      required: true
+
+  - type: dropdown
+    id: store
+    attributes:
+      label: Where was (or would be) the purchase made?
+      options:
+        - App Store (iOS / macOS)
+        - Google Play (Android)
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Shown in the app's settings (e.g. 4.23.0)
+      placeholder: "4.23.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What happens?
+      description: Include any error message you see, and what you already tried.
+    validations:
+      required: true
+
+  - type: input
+    id: transaction
+    attributes:
+      label: Transaction ID (optional)
+      description: Found in your App Store / Google Play purchase history. It lets us escalate with the platform.
+    validations:
+      required: false

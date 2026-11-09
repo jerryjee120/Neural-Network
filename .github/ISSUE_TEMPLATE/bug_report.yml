@@ -1,0 +1,78 @@
+name: Bug report
+description: Something in the app is broken or behaves unexpectedly
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. The fields below are the ones that actually let us
+        reproduce and fix a problem — reports with clear steps and a version
+        number get fixed fastest.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+      placeholder: "e.g. Tapping Chapter 5.3 opens a blank page; I expected the lesson to load."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the app
+        2. Go to ...
+        3. Tap ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iOS
+        - Android
+        - macOS
+        - Other (described below)
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Shown in the app's settings (e.g. 4.23.0)
+      placeholder: "4.23.0"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device and OS version
+      placeholder: "iPhone 15, iOS 18.2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or screen recording
+      description: Drag and drop images here — it helps a lot.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and this is not a duplicate
+          required: true
+        - label: This is not a billing or account question (see "Purchases & cross-device access" in the README)
+          required: false

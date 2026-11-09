@@ -1,0 +1,57 @@
+name: Feature request
+description: Suggest an idea, a new model or new tutorial content
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests normally start in **[Discussions › Ideas](https://github.com/jerryjee120/Neural-Network/discussions/new?category=ideas)**,
+        where everyone can vote and discuss them. Use this form if you would
+        rather track it as an issue — accepted ideas are implemented in a
+        future version.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app?
+      options:
+        - Tutorials / course content
+        - Lab / missions
+        - Models & editor
+        - Charts & animations
+        - Settings / accessibility
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would it solve?
+      description: Describe the situation where you miss this, rather than only the solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true
+
+  - type: input
+    id: related
+    attributes:
+      label: Related discussion or issue (optional)
+      placeholder: "#26"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and discussions and this is not a duplicate
+          required: true
